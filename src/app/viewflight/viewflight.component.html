@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">FLIGHT NAME</th>
+                    <th scope="col">ORIGIN</th>
+                    <th scope="col">DESTINATION</th>
+                    <th scope="col">CAPACITY</th>
+                  </tr>
+                </thead >
+                <tbody>
+                  <tr *ngFor="let i of list">
+                    <td>{{i.flight_name}}</td>
+                    <td>{{i.origin}}</td>
+                    <td>{{i.destination}}</td>
+                    <td>{{i.capacity}}</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
